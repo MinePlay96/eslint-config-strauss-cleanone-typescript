@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-strauss-cleanone-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the strauss cleanone typescript extra",
   "main": "index.js",
   "scripts": {
