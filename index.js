@@ -5,13 +5,17 @@ module.exports = {
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
-    "eslint-config-strauss-cleanone",
+    "eslint-config-strauss-cleanone"
   ],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType:  'module'
   },
   rules: {
+    // eslint for compadabylity
+    "no-underscore-dangle": ["error", { allowAfterThis: true, allowAfterSuper: true }],
+    "no-unused-vars": "off",
+    // ts rules
     "@typescript-eslint/array-type": ["error", { "default": "generic", "readonly": "generic" }],
     "@typescript-eslint/ban-ts-comment": ["error"],
     "@typescript-eslint/ban-types": ["error", {
@@ -26,7 +30,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' }],
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/explicit-member-accessibility": ["error", { accessibility: 'explicit' }],
-    "@typescript-eslint/member-delimiter-styl": ["error", { 
+    "@typescript-eslint/member-delimiter-style": ["error", { 
       multiline: { delimiter: "semi" },
       singleline: { delimiter: "semi" }
     }],
@@ -117,14 +121,17 @@ module.exports = {
       },
       {
         "selector": "interface",
+        "format": ["PascalCase"],
         "prefix": ["I"]
       },
       {
         "selector": "typeParameter",
+        "format": ["PascalCase"],
         "prefix": ["T"]
       },
       {
         "selector": "enum",
+        "format": ["PascalCase"],
         "prefix": ["E"]
       },
       {
@@ -167,7 +174,7 @@ module.exports = {
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-reduce-type-parameter": "error",
-    "@typescript-eslint/prefer-prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/prefer-regexp-exec": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
     "@typescript-eslint/promise-function-async": "error",
