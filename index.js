@@ -15,6 +15,8 @@ module.exports = {
     // eslint for compadabylity
     "no-underscore-dangle": ["error", { allowAfterThis: true, allowAfterSuper: true }],
     "no-unused-vars": "off",
+    // fixes
+    "@typescript-eslint/interface-name-prefix": "off",
     // ts rules
     "@typescript-eslint/array-type": ["error", { "default": "generic", "readonly": "generic" }],
     "@typescript-eslint/ban-ts-comment": ["error"],
