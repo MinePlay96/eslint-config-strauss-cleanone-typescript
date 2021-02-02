@@ -194,10 +194,10 @@ module.exports = {
     "indent": "off",
     "@typescript-eslint/indent": ["error", 2, {
       "SwitchCase": 1,
-      "VariableDeclarator": "first",
-      "FunctionExpression": {"parameters": "first"},
-      "FunctionDeclaration": {"parameters": "first"},
-      "CallExpression": {"arguments": "first"}
+      "FunctionDeclaration": {"body": 1, "parameters": 2},
+      "FunctionExpression": {"body": 1, "parameters": 2},
+      "CallExpression": {"arguments": 1},
+      "ArrayExpression": 1
     }],
     "no-array-constructor": "off",
     "@typescript-eslint/no-array-constructor": "error",
