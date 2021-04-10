@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-strauss-cleanone-typescript",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "the strauss cleanone typescript extra",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
-    "eslint-config-strauss-cleanone": "^1.1.2"
+    "eslint-config-strauss-cleanone": "^1.2.0"
   },
   "peerDependencies": {
     "eslint": ">= 3"
