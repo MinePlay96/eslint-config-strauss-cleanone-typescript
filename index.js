@@ -37,6 +37,7 @@ module.exports = {
     
     // fixes
     "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/camelcase": "off",
     
     // ts rules
     "@typescript-eslint/array-type": ["error", { "default": "generic", "readonly": "generic" }],
@@ -181,10 +182,12 @@ module.exports = {
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-type-alias": ["error", {
+      allowAliases: "always",
       allowCallbacks: "always",
       allowConditionalTypes: "always",
       allowConstructors: "always",
-      allowMappedTypes: "always"
+      allowMappedTypes: "always",
+      allowTupleTypes: "always"
     }],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
